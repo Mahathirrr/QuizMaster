@@ -3,10 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
+                    {{-- <div class="card-header">{{ __('Register') }}</div> --}}
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
+                        <h1 class="text-center">Student Register</h1>
+                        <form method="POST" action="{{ route('register') }}" class="mt-4">
                             @csrf
 
                             <div class="form-group row">
