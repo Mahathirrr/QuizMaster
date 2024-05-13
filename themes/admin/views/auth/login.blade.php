@@ -3,10 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
-
+                    {{-- <div class="card-header">{{ __('Login') }}</div> --}}
+                    
                     <div class="card-body">
-                        <form method="POST" action="{{ route('login') }}">
+                        <h1 class="text-center"><b>Admin Login</b> </h1>
+                        <form method="POST" action="{{ route('admin.login') }}" class="mt-4">
                             @csrf
 
                             <div class="form-group row">
@@ -55,11 +56,11 @@
                                         {{ __('Login') }}
                                     </button>
 
-                                    @if (Route::has('password.request'))
+                                    {{-- @if (Route::has('password.request'))
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
-                                    @endif
+                                    @endif --}}
                                 </div>
                             </div>
                         </form>
