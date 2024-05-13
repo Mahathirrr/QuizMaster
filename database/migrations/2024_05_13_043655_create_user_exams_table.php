@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateUserExamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('user_exams', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
+            $table->string('exam_id');
+            $table->string('std_status');
+            $table->string('exam_joined');
             $table->timestamps();
         });
     }
@@ -28,4 +32,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('user_exams');
     }
-};
+}
