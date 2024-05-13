@@ -9,11 +9,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js', 'themes/admin') }}" defer></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    @vite(['themes/admin/sass/app.scss', 'themes/admin/js/app.js'], 'admin')
+    <!-- Styles -->
+    <link href="{{ mix('css/app.css', 'themes/admin') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
