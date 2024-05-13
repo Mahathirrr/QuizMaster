@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> @yield('title')</title>
 
-  
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -78,9 +78,9 @@
         </div>
       </li>
 
-      
+
       <!-- Notifications Dropdown Menu -->
-      
+
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
@@ -98,8 +98,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <span class="brand-text font-weight-light">Online Examination</span>
+    <a href="index3.html" class="brand-link d-flex justify-content-center">
+      <span class="brand-text font-weight-bold text-success text-center" style="font-size: 36px;">QuizMaster</span>
     </a>
 
     <!-- Sidebar -->
@@ -123,7 +123,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          
+
             <li class="nav-item">
                 <a href="{{ url('student/dashboard')}}" class="nav-link">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -131,7 +131,7 @@
                     Dashboard
                     </p>
                 </a>
-            </li> 
+            </li>
             <li class="nav-item">
                 <a href="{{ url('student/exam')}}" class="nav-link">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -139,8 +139,8 @@
                     Exam
                     </p>
                 </a>
-            </li> 
-          
+            </li>
+
             <li class="nav-item">
               <a href="{{ url('student/logout')}}" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -150,8 +150,8 @@
               </a>
             </li>
             <!--
-          
-          
+
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -159,9 +159,9 @@
     <!-- /.sidebar -->
   </aside>
 
- 
 
- 
+
+
 
      @yield('content')
 
