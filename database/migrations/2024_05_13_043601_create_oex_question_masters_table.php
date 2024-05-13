@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateOexQuestionMastersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('oex_question_masters', function (Blueprint $table) {
             $table->id();
+            $table->string('exam_id')->nullable();
+            $table->string('questions')->nullable();
+            $table->string('ans')->nullable();
+            $table->string('options')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
@@ -28,4 +33,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('oex_question_masters');
     }
-};
+}
